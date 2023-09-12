@@ -1,12 +1,11 @@
 package com.example.demo.Employees;
 
-import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.*;
-
-import com.example.demo.Employees.Employee;
-import com.example.demo.Employees.EmployeeController;
 import org.springframework.hateoas.EntityModel;
 import org.springframework.hateoas.server.RepresentationModelAssembler;
 import org.springframework.stereotype.Component;
+
+import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
+import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 
 @Component
 class EmployeeModelAssembler implements RepresentationModelAssembler<Employee, EntityModel<Employee>> {
