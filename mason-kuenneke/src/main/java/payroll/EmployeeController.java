@@ -34,7 +34,6 @@ class EmployeeController {
     }
 
     // Single item
-
     @GetMapping("/employees/{id}")
     EntityModel<Employee> one(@PathVariable Long id) {
 
