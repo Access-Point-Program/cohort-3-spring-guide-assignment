@@ -16,8 +16,8 @@ class LoadDatabase {
     CommandLineRunner initDatabase(EmployeeRepository employeeRepository, OrderRepository orderRepository) {
 
         return args -> {
-            repository.save(new Employee("Bilbo", "Baggins", "burglar"));
-            repository.save(new Employee("Frodo", "Baggins", "thief"));
+            employeeRepositoryrepository.save(new Employee("Bilbo", "Baggins", "burglar"));
+            employeeRepository.save(new Employee("Frodo", "Baggins", "thief"));
 
             employeeRepository.findAll().forEach(employee -> log.info("Preloaded " + employee));
 
