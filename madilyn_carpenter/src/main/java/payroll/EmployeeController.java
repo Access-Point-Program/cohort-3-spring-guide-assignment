@@ -11,13 +11,19 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 
 @RestController
-class EmployeeController {
+    class EmployeeController {
 
-    private final EmployeeRepository repository;
+        private final EmployeeRepository repository;
 
-    EmployeeController(EmployeeRepository repository) {
-        this.repository = repository;
-    }
+        private final EmployeeModelAssembler assembler;
+
+        EmployeeController(EmployeeRepository repository, EmployeeModelAssembler assembler) {
+
+            this.repository = repository;
+            this.assembler = assembler;
+        }
+
+
 
 
     // Aggregate root
