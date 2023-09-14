@@ -1,3 +1,4 @@
+payroll\EmployeeModelAssembler.class
 payroll\EmployeeNotFoundException.class
 payroll\Employee.class
 payroll\EmployeeNotFoundAdvice.class
