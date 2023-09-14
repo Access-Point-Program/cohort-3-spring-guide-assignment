@@ -1,4 +1,4 @@
-package payroll;
+package Payroll;
 
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.*;
 
