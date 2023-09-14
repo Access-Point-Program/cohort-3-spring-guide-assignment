@@ -1,10 +1,13 @@
-payroll\EmployeeModelAssembler.class
 payroll\EmployeeNotFoundException.class
+payroll\OrderNotFoundException.class
 payroll\OrderRepository.class
 payroll\Status.class
+payroll\OrderController.class
 payroll\Employee.class
-payroll\EmployeeNotFoundAdvice.class
 payroll\Order.class
+payroll\EmployeeModelAssembler.class
+payroll\EmployeeNotFoundAdvice.class
+payroll\OrderModelAssembler.class
 payroll\PayrollApplication.class
 payroll\EmployeeController.class
 payroll\EmployeeRepository.class
