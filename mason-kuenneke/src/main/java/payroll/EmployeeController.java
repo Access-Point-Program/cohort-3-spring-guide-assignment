@@ -38,8 +38,13 @@ class EmployeeController {
     // end::get-aggregate-root[]
 
     @PostMapping("/employees")
-    Employee newEmployee(@RequestBody Employee newEmployee) {
-        return repository.save(newEmployee);
+    ResponseEntity<?> newEmployee(@RequestBody Employee newEmployee) {
+
+        EntityModel<Employee> entityModel = assembler.toModel(repository.save(newEmployee));
+
+        return ResponseEntity //
+                .created(entityModel.getRequiredLink(IanaLinkRelations.SELF).toUri()) //
+                .body(entityModel);
     }
 
     // Single item
