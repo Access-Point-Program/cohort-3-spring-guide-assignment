@@ -53,9 +53,8 @@ class Order {
 
         if (this == o)
             return true;
-        if (!(o instanceof Order))
+        if (!(o instanceof Order order))
             return false;
-        Order order = (Order) o;
         return Objects.equals(this.id, order.id) && Objects.equals(this.description, order.description)
                 && this.status == order.status;
     }
