@@ -9,13 +9,13 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="demo" target="17" />
+      <module name="demo" target="1.5" />
       <module name="spring-react-combo-app" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="demo" options="-parameters" />
+      <module name="demo" options="" />
       <module name="spring-react-combo-app" options="-parameters" />
     </option>
   </component>
