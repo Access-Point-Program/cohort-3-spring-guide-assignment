@@ -2,8 +2,6 @@ package payroll;
 
 import java.util.Objects;
 
-
-import ch.qos.logback.core.status.Status;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
@@ -18,7 +16,7 @@ class Order {
     private String description;
     private Status status;
 
-    Order(String iPhone, payroll.Status inProgress) {}
+    Order() {}
 
     Order(String description, Status status) {
 
@@ -70,8 +68,5 @@ class Order {
     @Override
     public String toString() {
         return "Order{" + "id=" + this.id + ", description='" + this.description + '\'' + ", status=" + this.status + '}';
-    }
-
-    public void setStatus(payroll.Status status) {
     }
 }
