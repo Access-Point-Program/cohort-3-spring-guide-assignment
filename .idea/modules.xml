@@ -3,8 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/cohort-3-spring-guide-assignment.iml" filepath="$PROJECT_DIR$/.idea/cohort-3-spring-guide-assignment.iml" />
-      <module fileurl="file://$PROJECT_DIR$/cameron-brooks/demo.iml" filepath="$PROJECT_DIR$/cameron-brooks/demo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-react-combo-app/spring-react-combo-app.iml" filepath="$PROJECT_DIR$/spring-react-combo-app/spring-react-combo-app.iml" />
     </modules>
   </component>
 </project>
